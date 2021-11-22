@@ -1,0 +1,50 @@
+<html>
+    <head>
+ <script language="JavaScript">
+    
+    function testResults (form) 
+             {
+                var ocena1 = parseFloat(form.ocena1.value);
+                var waga1 = parseFloat(form.waga1.value);
+                var ocena2 =  parseFloat(form.ocena2.value);
+                var waga2 =  parseFloat(form.waga2.value);
+                var ocena3 =  parseFloat(form.ocena3.value);
+                var waga3 =  parseFloat(form.waga3.value);
+                var ocena4 =  parseFloat(form.ocena4.value);
+                var waga4 =  parseFloat(form.waga4.value);
+                var ocena5 =  parseFloat(form.ocena5.value);
+                var waga5 =  parseFloat(form.waga5.value);
+                
+                var wagi=waga1+waga2+waga3+waga4+waga5;
+                var obliczenia=ocena1*waga1 + ocena2*waga2 + ocena3*waga3 + ocena4*waga4 + ocena5*waga5 ;
+                var srednia=obliczenia/wagi;
+                
+                
+                alert("Srednia ważona tych ocen:"+srednia);
+
+                return srednia;
+             } 
+
+ </script>
+    </head>
+    <body>
+            <FORM NAME="myform" ACTION="" METHOD="GET">Pierwsza ocena:
+            <INPUT TYPE="number" NAME="ocena1" VALUE=""><br>Pierwsza waga:&nbsp;
+            <INPUT TYPE="number" NAME="waga1" VALUE=""><br>Druga ocena:&nbsp;&nbsp;&nbsp;&nbsp;
+            <INPUT TYPE="number" NAME="ocena2" VALUE=""><br>Druga waga:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <INPUT TYPE="number" NAME="waga2" VALUE=""><br>Trzecia ocena:&nbsp;&nbsp; 
+            <INPUT TYPE="number" NAME="ocena3" VALUE=""><br>Trzecia waga:&nbsp;&nbsp;&nbsp;
+            <INPUT TYPE="number" NAME="waga3" VALUE=""><br>Czwarta ocena:        
+            <INPUT TYPE="number" NAME="ocena4" VALUE=""><br>Czwarta waga:&nbsp;
+            <INPUT TYPE="number" NAME="waga4" VALUE=""><br>Piąta ocena:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <INPUT TYPE="number" NAME="ocena5" VALUE=""><br>Piąta waga:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <INPUT TYPE="number" NAME="waga5" VALUE=""><br>
+
+            <INPUT TYPE="button" NAME="button" VALUE="Zapisz" onClick="testResults(this.form)">
+            <input TYPE="reset" VALUE="Reset">    
+             
+    
+            
+    
+    </body>
+</html>

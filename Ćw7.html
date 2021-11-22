@@ -1,0 +1,32 @@
+<html>
+    <head>
+    <script type="text/javascript">
+    function testResults (form) 
+             {
+                var uczen 
+                 {
+                    var imie=form.imie.value;
+                    nazwisko=form.imie.value;
+                    pesel=parseFloat(form.pesel.value);
+                    klasa=form.klasa.value;
+
+                 }
+    
+                    alert(form.imie.value);
+
+             }
+    
+    </script>
+    </head>
+    
+    <body>
+        <FORM NAME="myform" ACTION="" METHOD="GET"></FORM>Imie:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <INPUT TYPE="text" NAME="imie" VALUE=""><br>Nazwisko:
+        <INPUT TYPE="text" NAME="nazwisko" VALUE=""><br>Pesel:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <INPUT TYPE="number" NAME="pesel" VALUE=""><br> Klasa:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <INPUT TYPE="text" NAME="klasa" VALUE=""><br> 
+        
+        <INPUT TYPE="button" NAME="button" VALUE="Zapisz" onClick="testResults(this.form)">
+        <input TYPE="reset" VALUE="Reset">  
+    </body>
+</html>
